@@ -1,0 +1,49 @@
+@BASE_URL = http://localhost:3000/api
+
+
+GET {{BASE_URL}}
+
+###
+
+GET {{BASE_URL}}/users
+
+###
+
+GET {{BASE_URL}}/users/623b0f610e42b040477a9098
+
+###
+
+POST  {{BASE_URL}}/users
+Content-Type: application/json
+
+{
+    "isim" : "abdullah",
+    "userName" : "abgulltmer",
+    "email" : "awkgawgm@.csao",
+    "sifre":"484waf"
+}
+###
+
+PATCH  {{BASE_URL}}/users/6238f48cff265aac49b641c9
+Content-Type: application/json
+
+{
+    "isim" : "hasan3",
+    "userName":"steahasam4",
+    "email":"aww3f",
+    "sifre":"86aw1f23"
+}
+###
+
+POST  {{BASE_URL}}/users
+Content-Type: application/json
+
+{
+    "isim" : "hasan2",
+    "userName":"steahasam2",
+    "email":"aww2f",
+    "sifre":"86awf323"
+}
+###
+DELETE  {{BASE_URL}}/users/6238f3bb48d923974947813b
+Content-Type: application/json
